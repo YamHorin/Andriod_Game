@@ -220,7 +220,6 @@ class MainActivity : AppCompatActivity() {
         toast(text)
         vibrate()
     }
-    //TODO
     private fun changeActivity(string: String, score: Int) {
         val intent = Intent(this, ScoreActivity::class.java);
         var bundle = Bundle()
