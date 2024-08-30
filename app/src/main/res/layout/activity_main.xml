@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--make a background-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+<!--    Row1 layout-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/line_size"
+    android:layout_above="@id/main_LL_enemyRow1"
+    android:id="@+id/main_LL_enemyRow0"
+    android:layout_marginBottom="@dimen/default_margin"
+    >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_00"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+     />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_01"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_02"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+
+
+
+</LinearLayout>
+
+
+<!--    Row2 layout-->
+<LinearLayout
+    android:id="@+id/main_LL_enemyRow1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/line_size"
+    android:layout_above="@id/main_LL_enemyRow2"
+    android:layout_marginBottom="@dimen/default_margin"
+>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_10"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_11"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_12"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+
+</LinearLayout>
+
+<!--    Row3 layout-->
+
+<LinearLayout
+    android:id="@+id/main_LL_enemyRow2"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/line_size"
+    android:layout_above="@id/main_LL_enemyRow3"
+    android:layout_marginBottom="@dimen/default_margin"
+    >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_20"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="8dp"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_21"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="8dp"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_22"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+
+</LinearLayout>
+
+
+<!--    ROW4 layout-->
+
+<LinearLayout
+    android:id="@+id/main_LL_enemyRow3"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/line_size"
+    android:layout_above="@id/main_LL_playerRow"
+    android:layout_marginBottom="@dimen/default_margin"
+
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_30"
+                android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_31"
+                android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+       />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_32"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+         />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+</LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:icon="@drawable/baseline_chevron_left_24"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/big_margin"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:contentDescription="turn right"
+        android:layout_alignParentBottom="true"
+
+         />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginBottom="@dimen/big_margin"
+        app:icon="@drawable/baseline_chevron_right_24"
+        android:contentDescription="turn left"
+        android:layout_alignParentBottom="true"
+         />
+
+
+<!--    player layout-->
+    <LinearLayout
+        android:id="@+id/main_LL_playerRow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:layout_above="@id/main_FAB_Left"
+        android:layout_marginBottom="@dimen/default_margin"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_playPosition0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_playPosition1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_playPosition2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"         />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="@dimen/all_hearts_width"
+    android:layout_height="@dimen/all_heart_height"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="@dimen/margin_hearts"
+    android:layout_marginEnd="@dimen/margin_hearts"
+    >
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG_heart0"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/heart" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG_heart1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/heart" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG_heart2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/heart" />
+</LinearLayout>
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
