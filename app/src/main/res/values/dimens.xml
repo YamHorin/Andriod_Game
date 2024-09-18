@@ -4,8 +4,23 @@
     <dimen name="all_hearts_width">140dp</dimen>
     <dimen name="all_heart_height">40dp</dimen>
     <dimen name="big_margin">30dp</dimen>
-    <dimen name="line_size">100dp</dimen>
-    <dimen name="margin_hearts">20dp</dimen>
+    <dimen name="line_size">50dp</dimen>
+    <dimen name="margin_hearts">23dp</dimen>
     <dimen name="small_space">8dp</dimen>
     <dimen name="score_size">72sp</dimen>
+    <dimen name="text_size">60dp</dimen>
+    <dimen name="text_size_width">80sp</dimen>
+    <dimen name="space_score">22dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="defulte_padding">15dp</dimen>
+    <dimen name="title_size">24sp</dimen>
+    <dimen name="big_size_buttons">150dp</dimen>
+    <dimen name="spaceLinesStartScreen">40dp</dimen>
+    <dimen name="smallTextSize">23sp</dimen>
+    <dimen name="veryBigSpace">80dp</dimen>
+    <dimen name="playerItem_Vertical">5dp</dimen>
+    <dimen name="space_from_right_player_Item">20dp</dimen>
+    <dimen name="space_from_left_player_Item">5dp</dimen>
+    <dimen name="space_RL">10dp</dimen>
+    <dimen name="text_size_player">18sp</dimen>
 </resources>

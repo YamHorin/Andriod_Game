@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Andriod_Game</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list_hint">Please Enter Your Name </string>
+    <string name="fast_speed">Fast Speed</string>
+    <string name="low_speed">Low Speed</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="motioncontrellor">MotionContrellor</string>
+    <string name="buttons">Buttons</string>
+    <string name="escape_from_the_cockroach">Escape from the cockroach</string>
+    <string name="person_high_score_000">person ### high score 000</string>
+    <string name="player">player####</string>
+    <string name="scoreNUll">000</string>
+    <string name="click_here_to_go_back_to_the_start_screen">click here to go back to the start screen</string>
+    <string name="scoreboardTXT">Scoreboard</string>
+
 </resources>

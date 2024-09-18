@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartMenuActivity">
+
+<!--    place For Backgrounnd photo-->
+    <!--make a background-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/START_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/START_MTV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/escape_from_the_cockroach"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/veryBigSpace"/>
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/START_EFAB_play_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:text="play game "
+
+        app:icon="@drawable/cockroach"
+ />
+    <LinearLayout
+        android:id="@+id/START_LL_SPEED"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:orientation="horizontal"
+        android:layout_below="@id/START_MTV_title"
+        android:layout_marginTop="@dimen/veryBigSpace"
+        tools:ignore="ExtraText">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginStart="@dimen/space_RL"
+        android:id="@+id/START_MTV_speedGame"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Speed: Fast"
+        android:textStyle="bold"
+        android:textSize="@dimen/smallTextSize"
+        />
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/START_switch_speedSwitch"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:textOff="@string/low_speed"
+        android:textOn="@string/fast_speed"
+        app:switchTextAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:text=""
+
+        />
+
+        ></LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/START_EFAB_scoreBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_below="@id/START_EFAB_play_game"
+        android:text="@string/scoreboard"
+        app:icon="@drawable/woman"
+ />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:orientation="horizontal"
+        android:layout_below="@id/START_LL_SPEED"
+        android:layout_marginTop="@dimen/defulte_padding"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginStart="@dimen/space_RL"
+            android:id="@+id/START_MTV_HowToPlayGame"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Controller: Motion"
+            android:textStyle="bold"
+            android:textSize="@dimen/smallTextSize"
+            />
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/START_switch_HowToPlayGameSwitch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:textOff="@string/buttons"
+            android:textOn="@string/motioncontrellor"
+            app:switchTextAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:text=""
+            />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/START_IMG_photoDown"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/START_EFAB_scoreBoard"
+        android:layout_marginTop="@dimen/veryBigSpace"
+        android:scaleType="centerCrop" />
+</RelativeLayout>

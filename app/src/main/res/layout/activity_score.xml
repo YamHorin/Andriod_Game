@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.CircularRevealLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:orientation="vertical"
     tools:context=".ScoreActivity">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/score_LBL_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/score_size"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        tools:text="Status\n000" />
-</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/scoreActivity_Frame_up"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="@dimen/defulte_padding"
+        />
+
+
+    <FrameLayout
+        android:background="@color/orange400"
+        android:id="@+id/scoreActivity_Frame_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/defulte_padding" />
+
+
+</com.google.android.material.circularreveal.CircularRevealLinearLayout>

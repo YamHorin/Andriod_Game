@@ -1,13 +1,14 @@
 package com.example.andriod_game.logic
 
 import android.util.Log
+import com.example.andriod_game.Interfaces.CallBackSound
 import com.example.andriod_game.models.MatrixManager
 
 class GameManager (private val lifeCount: Int = 3){
-    //save for part 2 of the project
+    var callBackSound :CallBackSound? = null
     var score: Int = 0
         private set
-    var currentIndex: Int = 1
+    var currentIndex: Int = 2
         private set
     var lostLifes: Int = 0
         private set
@@ -16,6 +17,8 @@ class GameManager (private val lifeCount: Int = 3){
 
     val isGameLost: Boolean
         get() = lostLifes == lifeCount
+
+
 
     fun changesFrameEnemy() : Array<IntArray>
     {
@@ -29,7 +32,7 @@ class GameManager (private val lifeCount: Int = 3){
     fun checkCrash():Boolean
     {
         var bool:Boolean = false
-        for (i in 0..2)
+        for (i in 0..4)
         {
             if (matrixEnemy[matrixEnemy.size-1][i]==1 && i == currentIndex)
             {
@@ -37,6 +40,13 @@ class GameManager (private val lifeCount: Int = 3){
                 lostLifes++
                 score-= POINTS
                 bool = true
+                callBackSound?.enemy()
+            }
+            if (matrixEnemy[matrixEnemy.size-1][i]==2 && i == currentIndex)
+            {
+                Log.d("game notify" , "******* you got coin at position $i ******")
+                score+= 4*POINTS
+                callBackSound?.coin()
             }
         }
         score+= POINTS

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HighScoresFragment"
+    android:orientation="vertical"
+
+>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/HighScoresFragment_MTV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scoreboardTXT"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/defulte_padding"
+        android:layout_marginEnd="@dimen/small_space"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/HighScoresFragment_RV_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/HighScoresFragment_MTV_title"
+
+        android:layout_marginTop="@dimen/small_space"
+        tools:listitem="@layout/player_item"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/HighScoresFragment_FAB_GoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/big_margin"
+        android:clickable="true"
+        android:backgroundTint="@color/Green400"
+        android:contentDescription="@string/click_here_to_go_back_to_the_start_screen"
+        android:src="@drawable/baseline_chevron_left_24"
+
+        />
+</RelativeLayout>

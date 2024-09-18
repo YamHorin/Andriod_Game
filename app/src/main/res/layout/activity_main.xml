@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -21,9 +22,30 @@
     android:layout_above="@id/main_LL_enemyRow1"
     android:id="@+id/main_LL_enemyRow0"
     android:layout_marginBottom="@dimen/default_margin"
+    android:orientation="horizontal"
     >
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/main_ACIMGV_enemyPosition_00"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_01"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_02"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
@@ -33,7 +55,7 @@
         android:layout_width="@dimen/small_space"
         android:layout_height="0dp"/>
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_ACIMGV_enemyPosition_01"
+        android:id="@+id/main_ACIMGV_enemyPosition_03"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
@@ -44,7 +66,7 @@
         android:layout_width="@dimen/small_space"
         android:layout_height="0dp"/>
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_ACIMGV_enemyPosition_02"
+        android:id="@+id/main_ACIMGV_enemyPosition_04"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
@@ -67,8 +89,8 @@
     android:layout_height="@dimen/line_size"
     android:layout_above="@id/main_LL_enemyRow2"
     android:layout_marginBottom="@dimen/default_margin"
+    android:orientation="horizontal"
 >
-
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/main_ACIMGV_enemyPosition_10"
         android:layout_width="0dp"
@@ -100,6 +122,27 @@
         android:layout_width="@dimen/small_space"
         android:layout_height="0dp"/>
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_13"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_14"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+
 </LinearLayout>
 
 <!--    Row3 layout-->
@@ -110,6 +153,7 @@
     android:layout_height="@dimen/line_size"
     android:layout_above="@id/main_LL_enemyRow3"
     android:layout_marginBottom="@dimen/default_margin"
+    android:orientation="horizontal"
     >
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/main_ACIMGV_enemyPosition_20"
@@ -139,11 +183,30 @@
         android:scaleType="centerCrop"
         />
     <View
+        android:layout_width="8dp"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_23"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="8dp"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_24"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
         android:layout_width="@dimen/small_space"
         android:layout_height="0dp"/>
 
 </LinearLayout>
-
 
 <!--    ROW4 layout-->
 
@@ -151,13 +214,34 @@
     android:id="@+id/main_LL_enemyRow3"
     android:layout_width="match_parent"
     android:layout_height="@dimen/line_size"
-    android:layout_above="@id/main_LL_playerRow"
+    android:layout_above="@id/main_LL_enemyRow4"
     android:layout_marginBottom="@dimen/default_margin"
+    android:orientation="horizontal"
 
     >
-
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/main_ACIMGV_enemyPosition_30"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_31"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="@dimen/small_space"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_enemyPosition_32"
                 android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
@@ -168,7 +252,7 @@
         android:layout_height="0dp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_ACIMGV_enemyPosition_31"
+        android:id="@+id/main_ACIMGV_enemyPosition_33"
                 android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
@@ -179,7 +263,7 @@
         android:layout_height="0dp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/main_ACIMGV_enemyPosition_32"
+        android:id="@+id/main_ACIMGV_enemyPosition_34"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
@@ -189,6 +273,136 @@
         android:layout_width="@dimen/small_space"
         android:layout_height="0dp"/>
 </LinearLayout>
+<!--    ROW5 layout-->
+
+<LinearLayout
+        android:id="@+id/main_LL_enemyRow4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:layout_above="@id/main_LL_enemyRow5"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:orientation="horizontal"
+
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_40"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_41"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_42"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_43"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_44"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+<!--    ROW6 layout-->
+
+<LinearLayout
+        android:id="@+id/main_LL_enemyRow5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:layout_above="@id/main_LL_playerRow"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:orientation="horizontal"
+
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_50"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_51"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_52"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_53"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_ACIMGV_enemyPosition_54"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <View
+            android:layout_width="@dimen/small_space"
+            android:layout_height="0dp"/>
+    </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/main_FAB_Left"
@@ -224,15 +438,16 @@
         android:layout_height="@dimen/line_size"
         android:layout_above="@id/main_FAB_Left"
         android:layout_marginBottom="@dimen/default_margin"
+        android:orientation="horizontal"
         >
 
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/main_ACIMGV_playPosition0"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:layout_weight="1" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_playPosition0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_weight="1" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/main_ACIMGV_playPosition1"
@@ -248,6 +463,22 @@
         android:layout_weight="1"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_playPosition3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_ACIMGV_playPosition4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_weight="1" />
+
+
 
     </LinearLayout>
 
@@ -283,5 +514,16 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/heart" />
 </LinearLayout>
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/main_MTV_score"
+    android:layout_width="@dimen/text_size_width"
+    android:layout_height="@dimen/text_size"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_margin="@dimen/space_score"
+    android:text="000"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    ></com.google.android.material.textview.MaterialTextView>
 
 </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
